@@ -1,4 +1,3 @@
-#pragma once
 #include<iostream>
 template<class T>
 class Stack
@@ -6,7 +5,7 @@ class Stack
 	T * mas;
 	int size, max_size;
 public:
-	Stack(int m=10);
+	Stack(int m = 10);
 	Stack(const Stack<T>& s);
 	~Stack();
 	Stack<T>& operator =(const Stack<T>& s);
@@ -15,7 +14,6 @@ public:
 	bool Empty();
 	bool Full();
 	void Push(T a);
-	int Size() { return size; }
 	T Pop();
 	T Top();
 };
@@ -106,7 +104,7 @@ void Stack<T>::Push(T a)
 	{
 		throw max_size;
 	}
-	mas[size++] = a;
+	mas[size] = a;
 	size++;
 }
 template <class T>
@@ -116,7 +114,7 @@ T Stack<T>::Pop()
 	{
 		throw 0;
 	}
-	return mas[size--];
+	return mas[--size];
 }
 template <class T>
 T Stack <T>::Top()

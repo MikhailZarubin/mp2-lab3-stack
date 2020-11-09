@@ -1,10 +1,14 @@
-#include "../Test_Stack/gtest.h"
+#include "gtest.h"
 #include "../Stack/Stack.h"
 
 
 TEST(Stack, can_create_stack_with_positive_size)
 {
-  ASSERT_NO_THROW(Stack<int> s(5));
+  ASSERT_NO_THROW(Stack<int> s(3));
+}
+TEST(Stack, throws_when_create_stack_with_negative_size)
+{
+    ASSERT_ANY_THROW(Stack<int> s(-3));
 }
 
 /*TEST(TBitField, can_get_length)
