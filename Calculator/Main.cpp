@@ -4,6 +4,18 @@
 void main()
 {
 	Calculator calc;
-	calc.SetFormula("4 1 1 + / 3 *");
-	std::cout << calc.res();
+	while (true)
+	{
+		try 
+		{
+			std::string str;
+			std::cin >> str;
+			calc.SetFormula(str);
+			std::cout << std::endl << calc.res() << std::endl;
+		}
+		catch(int)
+		{
+			std::cout << "Error";
+		}
+	}
 }

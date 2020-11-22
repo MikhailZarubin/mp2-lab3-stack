@@ -16,7 +16,14 @@ public:
 	void Push(T a);
 	T Pop();
 	T Top();
+	void clear_stack();
+	int Size() { return size; }
 };
+template<class T>
+void Stack<T>::clear_stack()
+{
+	size = 0;
+}
 template <class T>
 Stack<T>::Stack(int m)
 {
