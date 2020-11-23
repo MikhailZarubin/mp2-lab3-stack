@@ -13,10 +13,10 @@ int Priority(char c)
 	case'(':return 1;
 	case')':return 1;
 	case'^':return 4;
-	case's':return 1;
-	case'c':return 1;
-	case'l':return 1;
-	case'e':return 1;
+	//case's':return 1;
+	//case'c':return 1;
+	//case'l':return 1;
+	//case'e':return 1;
 	default: return 0;
 	}
 }
