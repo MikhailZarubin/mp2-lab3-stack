@@ -9,8 +9,9 @@ class Calculator
 	Stack<char> st_c;
 	Stack<double> st_d;
 	void ToPostfix();
+	bool CheckBrackets();
 public:
 	void SetFormula(std::string str);
-	bool CheckBrackets();
 	double res();
+	double res_math();
 };

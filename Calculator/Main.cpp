@@ -15,7 +15,7 @@ void main()
 		}
 		catch(int)
 		{
-			std::cout << "Error";
+			std::cout << "Error in the arrangement of brackets"<<std::endl;
 		}
 	}
 }
