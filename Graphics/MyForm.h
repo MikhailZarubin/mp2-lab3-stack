@@ -62,16 +62,18 @@ namespace Graphics {
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(13, 56);
+			this->textBox1->Location = System::Drawing::Point(22, 86);
+			this->textBox1->Margin = System::Windows::Forms::Padding(5, 5, 5, 5);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(171, 20);
+			this->textBox1->Size = System::Drawing::Size(282, 26);
 			this->textBox1->TabIndex = 0;
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(190, 57);
+			this->button1->Location = System::Drawing::Point(317, 88);
+			this->button1->Margin = System::Windows::Forms::Padding(5, 5, 5, 5);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(33, 19);
+			this->button1->Size = System::Drawing::Size(55, 29);
 			this->button1->TabIndex = 1;
 			this->button1->Text = L"=";
 			this->button1->UseVisualStyleBackColor = true;
@@ -80,22 +82,28 @@ namespace Graphics {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(241, 63);
+			this->label1->Location = System::Drawing::Point(402, 97);
+			this->label1->Margin = System::Windows::Forms::Padding(5, 0, 5, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(10, 13);
+			this->label1->Size = System::Drawing::Size(14, 20);
 			this->label1->TabIndex = 2;
 			this->label1->Text = L" ";
 			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(10, 20);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(343, 146);
+			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
+			this->ClientSize = System::Drawing::Size(572, 225);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->textBox1);
+			this->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->Margin = System::Windows::Forms::Padding(5, 5, 5, 5);
 			this->Name = L"MyForm";
-			this->Text = L"MyForm";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
+			this->Text = L"Calculator";
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
