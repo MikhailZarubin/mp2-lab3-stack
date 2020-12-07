@@ -13,5 +13,4 @@ class Calculator
 public:
 	void SetFormula(std::string str);
 	double res();
-	double res_math();
 };

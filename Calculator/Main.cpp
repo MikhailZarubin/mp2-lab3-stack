@@ -9,7 +9,7 @@ void main()
 		try 
 		{
 			std::string str;
-			std::cin >> str;
+			std::getline(std::cin, str);
 			calc.SetFormula(str);
 			std::cout << std::endl << calc.res() << std::endl;
 		}
